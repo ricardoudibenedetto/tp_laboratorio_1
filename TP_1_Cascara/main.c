@@ -75,7 +75,7 @@ int main()
                 system("pause");
                 break;
             case 7:
-                if(a<0)
+                if(a<0||a>11)
                     {
                         printf("\t\t*************************************************\n\t\t\t\tCALCULADORA\t\t\t\n\t\t*\t\t\t\t\t\t*\n\t\t\tError en el factoreo\n\t\t*\t no es posible realizar esa operacion\t*\n\n\t\t*************************************************\n\n");
                         system("pause");
@@ -96,7 +96,7 @@ int main()
                 printf("\t\t\n\t\t\t\t\t\t\n\t\t*\tRESTA\t\t\t\t\t*\n\t\t\t%.2f-%.2f\n\t\t*\t\t\t\t\t\t*\n\t\t\t\tResultado: %.2f\n\t\t*\t\t\t\t\t\t*", a,b,resultado);
                 resultado=multiplicar(a , b);
                 printf("\t\t\n\t\t\t\t\t\t\n\t\t*\tMULTIPLICACION\t\t\t\t*\n\t\t\t%.2f*%.2f\n\t\t*\t\t\t\t\t\t*\n\t\t\t\tResultado: %.2f\n\t\t*\t\t\t\t\t\t*", a,b,resultado);
-                if(a<0)
+                if(a<0||a>11)
                         {
                             printf("\n\t\t\n\t\t\t\t\t\t\n\t\t*\tFACTOREO\t\t\t\t*\n\t\t\tNO SE PUEDE REALIZAR\n\t\t*\t\t\t\t\t\t*\n\t\t\n\t\t*\t\t\t\t\t\t*");
                             if(b==0)
